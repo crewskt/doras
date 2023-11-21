@@ -1,0 +1,806 @@
+@font-face {
+    font-family: caviarDream;
+    src: url(../assets/fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: caviarBold;
+    src: url(../assets/fonts/CaviarDreams_Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: caviarDream,Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+:root{
+    --var--white1:#FFFFFF;
+
+    --var--pink1:#97180a;
+    --var--pink2: #c0220d;
+
+    --var--green1:#91BCBA;
+    --var--green2:#81B9B7;
+    --var--green3: #489997;
+}
+
+.bt-verde{
+    background-color: var(--var--green1);
+    color: var(--var--white1);
+    border: none;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    border-radius: 2rem;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    text-align: center ;
+    
+    transition: all ease 0.5s;
+}
+
+.bt-verde:hover{
+    background-color: var(--var--green3);
+}
+
+.bt-rosa{
+
+    background-color: var(--var--pink1);
+    color: var(--var--white1);
+    border: none;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    border-radius: 2rem;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    text-align: center ;
+    border: none;
+    outline: none;
+
+    transition: all ease 0.5s;
+}
+
+.bt-rosa:hover{
+    background-color: var(--var--pink2);
+}
+ 
+/* ----------------------Header----------------------  */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--var--white1);
+    background-image: url(../assets/images/beginListra.png);
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
+.logoPinheiro{
+    margin-top: 1rem;
+    width: 12rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    cursor: pointer;
+    max-width: 25rem;
+    z-index: 3;
+}
+
+.iconMenu {
+    width: 3rem;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoNav img {
+    width: 130px;
+}
+
+.bar input {
+    display: none;
+}
+
+.hamburguer {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburguer::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    border-radius: 20px;
+    background: var(--var--pink2);
+    transition: 1s ease;
+}
+
+.hamburguer::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+    background: var(--var--green3);
+    transition: 1s ease;
+}
+
+#hamburguer:checked~label .hamburguer::after {
+    transform: rotate(225deg);
+    width: 70%;
+    height: 10%;
+    top: 45%;
+    left: 15%;
+}
+
+#hamburguer:checked~label .hamburguer::before {
+    transform: rotate(-770deg);
+    width: 70%;
+    height: 10%;
+    top: 45%;
+    left: 15%;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    padding: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--var--pink1);
+}
+
+.menu a:hover {
+    background-color: var(--var--white1);
+    color: var(--var--green1);
+    transition: 0.5s;
+
+}
+
+/* ----------------------Begin Screen----------------------  */
+.beginScreen{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    /* background-image: url(../assets/images/beginListra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  */
+    z-index: 1;
+}
+
+.divColorConfete{
+    position: absolute;
+    left: 0;
+    top: 1rem;
+ 
+}
+
+.colorConfete{
+
+}
+
+.colorConfeteMobile{
+    display: none;
+}
+
+
+.colorConfete{
+    width: 70rem;
+ 
+}
+
+.perfectPlace{
+    font-size: 2.5rem;
+    color: var(--var--pink1);
+    position: absolute;
+    transform: translate(-130%, -30%);
+    text-align:start;
+}
+
+.perfectPlace > span{
+    font-size: 2.5rem;
+    color: var(--var--green3);
+    font-weight: 900;
+}
+
+.divCake{
+    position: relative;
+    margin-right: 10rem;
+}
+
+.whiteCakeMenu{
+    padding: 2rem 8rem 2rem 5rem;
+    background-color: var(--var--green3);
+    color: var(--var--white1);
+    border-radius: 5rem;
+    position: absolute;
+    transform: translate(-65%, -130%);
+    transition: all ease 0.5s;
+    cursor: pointer;
+    
+    z-index: -1;
+}
+
+.whiteCakeMenu:hover{
+    background-color: var(--var--green1);
+}
+
+.whiteCake{
+    width: 25rem;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.cakeBG{
+    width: 25rem;
+    position: absolute;
+    z-index: -1;
+    left: 1rem;
+    top: 1rem;
+    
+}
+
+
+
+/* ----------------------About----------------------  */
+
+.about{
+position: relative;
+}
+
+.aboutBG{
+    z-index: -1;
+    width: 100%;
+    height: 90rem;
+}
+
+.conteudoZindex1{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.marginT0{
+    margin-top: 6rem;
+}
+
+.marginT1{
+    margin-top: 3rem;
+}
+
+.dFlexEvenly{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+#carouselAboutMobile{
+ display: none;   
+}
+
+.imgCarousel{
+    max-width: 22rem;
+    border-radius: 0.5rem;
+}
+
+.doras{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+}
+
+.dorasMobile{
+    display: none;
+}
+
+.dorasIMG{
+    width: 35rem;
+    border-radius: 50%;
+}
+
+.verde{
+    color: var(--var--green3);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.dorasFlex{
+    /* background-color: green; */
+
+    text-align: center;
+   
+}
+
+.textoFlex{
+    /* background-color: blue; */
+    width: 50%;
+   font-weight: 900;
+}
+
+.textoFlex > p{
+    font-size: 1.5rem;
+    color: var(--var--white1);
+}
+
+
+
+/* ----------------------Cake's Menu----------------------  */
+
+.cakesMenu{
+    position: relative;
+    background-image: url(../assets/images/beginListra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.confenteEnd{
+    text-align: end;
+    transform: translateY(-40%);
+
+}
+
+.confenteStart{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -23rem;
+    z-index: 1;
+
+}
+
+.confetesMenu{
+    max-width: 30rem;
+}
+
+.verdeMenu{
+    color:var(--var--green3);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.alinhaCarousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.containerCorousel{
+    width: 40%;
+    text-align: center;
+    
+}
+
+.menuPhoto{
+    width: 50rem;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236D6D6D' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236D6D6D' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+/* ----------------------Form----------------------  */
+
+.containerForm{
+    width: 100%;
+    background-color: var(--var--green2);
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+}
+
+.order{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--var--pink2);
+    font-weight: 900;
+    font-size: 3rem;
+    align-self: flex-start;
+    
+}
+
+.containerInputs{
+    z-index: 2;
+    width: 80%;
+}
+
+.formTitles{
+    color: var(--var--white1);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.inputDescription{
+    width: 100%;
+    height: 8rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+input{
+    width: 100%;
+    border: none;
+    outline: none;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.alingCenter{
+    margin: auto;
+}
+
+.confeteOrder{
+    position: absolute;
+    right: 0;
+    bottom: -15rem;
+    z-index: 1;
+}
+
+.formConfete{
+    width: 30rem;
+    
+}
+
+/* ----------------------Footer----------------------  */
+
+footer{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(../assets/images/beginListra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoFooter{
+    width: 12rem;
+}
+
+.socialMedias{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialMediasWidth{
+    width: 8rem;
+}
+
+
+/* ----------------------Mobile----------------------  */
+
+@media screen and (max-width: 1000px) {
+
+    /* ----------------------Header----------------------  */
+
+    .logoPinheiro{
+        max-width: 8rem;
+    }
+
+    .hamburguer {
+        display: block;
+        position: absolute;
+        top: 45px;
+        right: 55px;
+        z-index: 999;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 998;
+        height: 100vh;
+        background: var(--var--white1);
+        opacity: 0.8;
+        padding: 100px 20px 0;
+        flex-direction: column;
+        transition: 0.5s ease;
+        display: block;
+    }
+    .menu.active {
+        /* right: -100%; */
+        display: none;
+    }
+    
+/* ----------------------begin Mobile----------------------  */
+
+.beginScreen{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    background-image: url(../assets/images/beginListra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ 
+    z-index: 1;
+}
+
+
+.colorConfete{
+    display: none;
+}
+
+.colorConfeteMobile{
+    display: inline-block;
+    width: 45rem;
+    position: absolute;
+    top:-10rem;
+}
+
+.perfectPlace{
+    font-size:1.8rem;
+    color: var(--var--pink1);
+    position:absolute;
+    transform: translate(-0%, -70%);
+    text-align:start;
+}
+
+.perfectPlace > span{
+    font-size: 1.8rem;
+    color: var(--var--green3);
+    font-weight: 900;
+}
+
+.divCake{
+    position: relative;
+    margin-right: 2rem;
+    z-index: 2;
+}
+
+.whiteCakeMenu{
+    padding: 2rem 8rem 2rem 3rem;
+    background-color: var(--var--green3);
+    color: var(--var--white1);
+    border-radius: 5rem;
+    position: absolute;
+    transform: translate(-60%, -130%);
+    transition: all ease 0.5s;
+    cursor: pointer;
+    
+    z-index: -1;
+}
+
+.whiteCakeMenu:hover{
+    background-color: var(--var--green1);
+}
+
+.whiteCake{
+    width: 20rem;
+    border-radius: 50%;
+    z-index: 3;
+    margin-top: 5rem;
+}
+
+.cakeBG{
+    width: 20rem;
+    position: absolute;
+    z-index: -1;
+    left: 1rem;
+    top: 1rem;
+    margin-top: 5rem;
+    
+}
+
+
+/* ----------------------about Mobile----------------------  */
+.aboutBG{
+    height: 100rem;
+}
+
+
+#carouselAbout{
+    display: none;
+}
+
+#carouselAboutMobile{
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+  
+
+}
+.alinha{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.containerCarouselAboutMobile{
+    width: 100%;
+    
+}
+
+.imgCarouselMobile{
+    width: 20rem;
+}
+
+.doras{
+display: none;
+}
+
+.dorasMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.dorasFlexMobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.dorasFlexMobile > img{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 60%;
+}
+
+
+.dorasFlexMobile > h3 {
+    color: var(--var--green3);
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+
+.h3span {
+    color: var(--var--green3);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.textoFlexMobile{
+    color: var(--var--white1);
+    width: 80%;
+    text-align: justify;
+    margin-top: 2rem;
+    z-index: 1;
+}
+
+.textoFlexMobile > p{
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+
+/* ----------------------Cakes's Mobile----------------------  */
+
+.confetesMenu{
+    max-width: 19rem;
+}
+
+.confenteEnd{
+    text-align: end;
+    transform: translateY(-10%);
+
+}
+
+.confenteStart{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -10rem;
+    z-index: 1;
+
+}
+
+.verdeMenu{
+    font-size: 2rem;
+}
+
+.alinhaCarousel{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.containerCorousel{
+    width: 80%;
+}
+
+.formConfete{
+    width: 20rem;
+    
+}
+
+
+/* ----------------------Footer Mobile----------------------  */
+
+footer{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.logoFooter{
+    width: 12rem;
+    z-index: 2;
+}
+
+.socialMedias{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.socialMediasWidth{
+    width: 6rem;
+}
+
+}

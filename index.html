@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dora´s Gourmet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./assets/images/greenLogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Estilo do botão -->
+  <style type="text/css">
+    .whatsapp-plug-icon {
+      position: fixed;
+      z-index: 1000;
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      -webkit-border-radius: 50%;
+      cursor: pointer;
+      background-color: #0ba360;
+      transition: .3s;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(https://adsconcept.com.br/wp-content/uploads/2020/10/Whatsapp_AdsConcept.png);
+      background-size: 50% auto;
+    }
+
+    .whatsapp-plug-icon:hover {
+      background-color: #15cc74;
+    }
+
+    .whatsapp-plug-icon::after, .whatsapp-plug-icon::before {
+      content: '';
+      position: absolute;
+      opacity: 0;
+      border: 4px solid #0ba360;
+      left: -10px;
+      top: -10px;
+      right: -10px;
+      bottom: -10px;
+      -webkit-border-radius: 50%;
+      animation: WaveWhatsApp 1.5s ease infinite;
+    }
+
+    .whatsapp-plug-icon::after {
+      animation-delay: .5s;
+    }
+    .whatsapp-plug-icon:hover::after {
+      border: 4px solid #15cc74;
+    }
+    .whatsapp-plug-icon:hover::before {
+      border: 4px solid #15cc74;
+    }
+    @keyframes WaveWhatsApp {
+      0%{
+        transform: scale(0.5);
+      }
+      50%{
+        opacity: 1;
+      }
+      100%{
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+  </style>
+
+  <a target="_blank" class="whatsapp-plug-icon" href="https://api.whatsapp.com/send?phone=5521970079123&text=Olá"></a>
+
+
+</body>
+</html>
+<body>
+
+
+
+    <div class="cont">
+
+        <header id="begin">
+            <a href="#begin"><img class="logoPinheiro" src="./assets/images/greenLogo.png"
+                    alt="Dora's Gourmet"></a>
+            <div class="bar">
+                <nav>
+                    <input id="hamburguer" type="checkbox">
+                    <label for="hamburguer">
+                        <div class="hamburguer active"></div>
+                    </label>
+
+                    <ul class="menu active">
+                        <li><a href="#doras">Sobre</a></li>
+                        <li><a href="#carouselAbout">Fotos</a></li>
+                        <li><a href="#menuPinheiro">Cardápio</a></li>
+                        <li><a href="#budget">Orçamento</a></li>
+                        <li><a href="#socialMedias">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <section class="beginScreen">
+
+            <div class="divColorConfete">
+                <img class="colorConfete" src="./assets/images/beginConfete.png" alt="">
+                <img class="colorConfeteMobile" src="./assets/images/mobile/beginConfete.png" alt="">
+            </div>
+
+
+            <div class="divCake">
+                <p class="perfectPlace">Estamos aqui para tornar todos os seus momentos <span>especiais</span>
+                    com a guloseima 
+                    ideal.</p>
+
+                <img class="whiteCake" src="./assets/images/whiteCake.jpg">
+                 <!--<img class="cakeBG" src="./assets/images/cakeBG.png"> -->
+
+                <a href="#menuPinheiro">
+                    <h2 class="whiteCakeMenu">CARDÁPIO</h2>
+                </a>
+            </div>
+
+        </section>
+
+
+        <section class="about">
+            <img class="aboutBG" src="./assets/images/aboutBG.png" alt="background sobre">
+            <!-- <img class="aboutBGMobile" src="./assets/images/mobile/aboutBG.png" alt="background sobre"> -->
+
+            <div class="conteudoZindex1">
+
+                <div id="carouselAbout" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner marginT0">
+                        <div class="carousel-item active">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAbout"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAbout"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div id="carouselAboutMobile" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="dFlexEvenly">
+                                <div class="alignCenter">
+                                    <img class="imgCarousel" src="./assets/images/cake1.jpeg" alt="bolo 1"><br>
+                                    <a href="#budget"><button class="marginT1 bt-verde">ORÇAR PEDIDO</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAboutMobile"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAboutMobile"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+                <div id="doras" class="doras marginT0">
+                    <div class="dorasFlex">
+                        <img class="dorasIMG" src="./assets/images/doras1.jpg" alt="Confeiteira Juliana">
+                    </div>
+
+                    <div class="textoFlex">
+                        <h2 class="verde">Juliana de castro - Confeiteira</h3>
+                            <p>QUEM SOU EU ?</p>
+                    </div>
+
+
+                </div>
+
+                <div id="dorasMobile" class="dorasMobile">
+                    <div class="dorasFlexMobile">
+                        <h3>Juliana de castro <br><span class="h3span">Confeiteira</span></h3>
+
+                        <img src="./assets/images/doras1.jpg" alt="Juliana de Castro">
+
+                    </div>
+
+                    <div class="textoFlexMobile">
+                        <p>QUEM SOU EU ?</p>
+                    </div>
+                </div>
+
+                <div class="confenteEnd">
+                    <img class="confetesMenu" src="./assets/images/menuConfeteRight.png">
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <section class="cakesMenu">
+
+            <h2 id="menuPinheiro" class="verdeMenu">CARDÁPIO</h1>
+
+                <div class="alinhaCarousel">
+
+                    <div class="containerCorousel">
+
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade"
+                            data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                    aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/images/menu0.png" class="d-block w-100" alt="menu">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/menu1.png" class="d-block w-100" alt="menu">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/menu2.png" class="d-block w-100" alt="menu">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/menu3.png" class="d-block w-100" alt="menu">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/menu4.png" class="d-block w-100" alt="menu">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/menu5.png" class="d-block w-100" alt="menu">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/menu6.png" class="d-block w-100" alt="menu">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <section class="containerForm">
+
+            <div class="confenteStart">
+                <img class="confetesMenu" src="./assets/images/menuConfeteLeft.png">
+            </div>
+
+
+
+            <div class="containerInputs">
+                <h2 id="budget" class="order">FAÇA SEU ORÇAMENTO:</h2>
+                <form
+                    action="https://app.us6.list-manage.com/subscribe/post?u=md-60ydTzUmBOMamuuYKRoHQA&amp;id=900d059d01"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+
+                    <p class="formTitles">Descrição do(s) produto(s) (tipo, tamanho, sabor, adicionais):</p>
+                    <textarea class="inputDescription required" name="DESCRICAO" id="DESCRICAO" cols="30"
+                        rows="10"></textarea>
+
+                    <p class="formTitles">Nome do solicitante:</p>
+                    <input class="required" type="text" name="FNAME" id="FNAME">
+
+                    <p class="formTitles">E-mail:</p>
+                    <input class="required" type="email" name="EMAIL" id="EMAIL">
+
+                    <p class="formTitles">Celular:</p>
+                    <input class="required" type="number" name="PHONE" id="PHONE"><br>
+
+
+                    <button class="bt-rosa mt-5 mb-5 alingCenter" onclick="limpaCampos()">ENVIAR</button>
+                </form>
+
+            </div>
+
+            <div class="confeteOrder">
+                <img class="formConfete" src="./assets/images/formConfete.png">
+            </div>
+
+
+        </section>
+
+        <footer>
+
+            <div>
+                <a href="#begin"><img class="logoFooter" src="./assets/images/greenLogo.png" alt="Logo"></a>
+            </div>
+
+
+            <div id="socialMedias" class="socialMedias">
+                <a href="https://api.whatsapp.com/send?phone=5521970079123&text=Ol%C3%A1" target="_blank"><img class="socialMediasWidth"
+                        src="./assets/images/wpp.png" alt="Whatasapp"></a>
+                <a href="https://www.instagram.com/doras.gourmet/" target="_blank"><img class="socialMediasWidth"
+                        src="./assets/images/insta.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/doras.gourmet/" target="_blank"><img class="socialMediasWidth"
+                        src="./assets/images/face.png" alt="Facebook"></a>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>
