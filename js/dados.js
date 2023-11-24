@@ -3,7 +3,7 @@ var MENU = {
     "burgers": [
         {
             "id": "15259-german-chocolate-killer-brownie-tin-pack",
-            "img": "https://dorasg.vercel.app/img/cardapio/sobremesas/brigadeiro.png",
+            "img": "./img/cardapio/sobremesas/brigadeiro.png",
             "name": "Brigadeiros",
             "dsc": " Guirlandinha de Brigadeiros presenteável composta de 6 brigadeiros gourmet.",
             "price": 22
