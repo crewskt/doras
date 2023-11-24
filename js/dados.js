@@ -4,9 +4,9 @@ var MENU = {
         {
             "id": "15259-german-chocolate-killer-brownie-tin-pack",
             "img": "./img/cardapio/sobremesas/brigadeiro.png",
-            "name": "Brigadeiro®",
-            "dsc": "Brigadeiro",
-            "price": 39.99
+            "name": "Brigadeiro",
+            "dsc": "Brigadeiros Guirlandinha presenteável composta de 6 brigadeiros gourmet.",
+            "price": 22
         },
        // {
         //    "id": "jacques-world-famous-chocolate-chip-cookies",
