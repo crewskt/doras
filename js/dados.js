@@ -4,24 +4,24 @@ var MENU = {
         {
             "id": "15259-german-chocolate-killer-brownie-tin-pack",
             "img": "./img/cardapio/sobremesas/brigadeiro.png",
-            "name": "Brigadeiro",
-            "dsc": "Brigadeiros Guirlandinha presenteável composta de 6 brigadeiros gourmet.",
+            "name": "Brigadeiros",
+            "dsc": " Guirlandinha de Brigadeiros presenteável composta de 6 brigadeiros gourmet.",
             "price": 22
         },
-       // {
-        //    "id": "jacques-world-famous-chocolate-chip-cookies",
-        //    "img": "./img/cardapio/sobremesas/jacques-world-famous-chocolate-chip-cookies-6-pack.2217a14c443602493bba88aa9335319a.jpg",
-         //   "name": "Jacques Torres Chocolate",
-         //   "dsc": "Jacques' World Famous Chocolate Chip Cookies - 6 Pack",
-          //  "price": 39.95
-       // },
-        //{
-        //    "id": "luigis-original-cannoli-pie",
-        //    "img": "./img/cardapio/sobremesas/original-cannoli-pie.4cb5b9ba82f57b69b90765fd9f07aa1a.jpg",
-        //    "name": "The Cannoli Pie Company",
-        //    "dsc": "Original Cannoli Pie",
-        //    "price": 69
-       // },
+        {
+            "id": "jacques-world-famous-chocolate-chip-cookies",
+            "img": "./img/cardapio/sobremesas/cxdebrigadeiro.jpg",
+            "name": "Cx. de Brigadeiros",
+            "dsc": "Caixa presenteável com 12 brigadeiros gourmet (consulte sabores)",
+            "price": 40
+        },
+        {
+            "id": "luigis-original-cannoli-pie",
+            "img": "./img/cardapio/sobremesas/original-cannoli-pie.4cb5b9ba82f57b69b90765fd9f07aa1a.jpg",
+            "name": "Barra Natalina",
+            "dsc": "Deliciosa Barra de Chocolate presenteável, no sabores brigadeiro gourmet ou ninho com nutella.",
+            "price": 42
+        },
         /*{
             "id": "sea-salted-caramel-swirl-cheesecake",
             "img": "./img/cardapio/sobremesas/sea-salted-caramel-swirl-cheesecake.e2825335433fb7a272a5d77649a6849e.jpg",
