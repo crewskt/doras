@@ -3,7 +3,7 @@ var MENU = {
     "burgers": [
         {
             "id": "15259-german-chocolate-killer-brownie-tin-pack",
-            "img": "./img/cardapio/sobremesas/german-chocolate-killer-brownie-tin-pack.5ebc34160f28767a9d94c4da2e04c4b9.jpg",
+            "img": "./img/cardapio/sobremesas/brigadeiro.png",
             "name": "Brigadeiro®",
             "dsc": "Brigadeiro",
             "price": 39.99
