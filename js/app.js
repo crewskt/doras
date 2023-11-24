@@ -536,7 +536,7 @@ cardapio.metodos = {
 
     carregarBotaoLigar: () => {
 
-        $('#btnLigar').attr('href', `https://api.whatsapp.com/send?phone=5521970079123&text=Ol%C3%A1`)
+        $('#btnLigar').attr('href', `https://api.whatsapp.com/send?phone=5521970079123&text=Olá%C3%A1`)
 
     },
 
