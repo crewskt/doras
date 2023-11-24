@@ -3,7 +3,7 @@ var MENU = {
     "burgers": [
         {
             "id": "15259-german-chocolate-killer-brownie-tin-pack",
-            "img": "./img/cardapio/sobremesas/brigadeiro.png",
+            "img": "https://dorasg.vercel.app/img/cardapio/sobremesas/brigadeiro.png",
             "name": "Brigadeiros",
             "dsc": " Guirlandinha de Brigadeiros presenteável composta de 6 brigadeiros gourmet.",
             "price": 22
@@ -17,7 +17,7 @@ var MENU = {
         },
         {
             "id": "luigis-original-cannoli-pie",
-            "img": "./img/cardapio/sobremesas/original-cannoli-pie.4cb5b9ba82f57b69b90765fd9f07aa1a.jpg",
+            "img": "./img/cardapio/sobremesas/barranatalina.jpg",
             "name": "Barra Natalina",
             "dsc": "Deliciosa Barra de Chocolate presenteável, no sabores brigadeiro gourmet ou ninho com nutella.",
             "price": 42
