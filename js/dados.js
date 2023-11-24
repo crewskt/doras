@@ -12,7 +12,7 @@ var MENU = {
             "id": "jacques-world-famous-chocolate-chip-cookies",
             "img": "./img/cardapio/sobremesas/cxdebrigadeiro.jpg",
             "name": "Cx. de Brigadeiros",
-            "dsc": "Caixa presenteável com 12 brigadeiros gourmet (consulte sabores)",
+            "dsc": "Caixa presenteável com 12 brigadeiros gourmet (consulte sabores).",
             "price": 40
         },
         {
@@ -22,27 +22,27 @@ var MENU = {
             "dsc": "Deliciosa Barra de Chocolate presenteável, no sabores brigadeiro gourmet ou ninho com nutella.",
             "price": 42
         },
-        /*{
+        {
             "id": "sea-salted-caramel-swirl-cheesecake",
-            "img": "./img/cardapio/sobremesas/sea-salted-caramel-swirl-cheesecake.e2825335433fb7a272a5d77649a6849e.jpg",
-            "name": "Cotton Blues Cheesecake Company",
-            "dsc": "Sea-Salted Caramel Swirl Cheesecake",
-            "price": 65
+            "img": "./img/cardapio/sobremesas/pavedelimao.jpg",
+            "name": "Pavê de Limão",
+            "dsc": "Delicioso pavê com base de biscoito de maisena, creme aveludado de limão e cobertura de chantyninho.",
+            "price": 85
         },
         {
             "id": "brooklyn-blackout-cookie-brownie-combo-pack-2-tins",
-            "img": "./img/cardapio/sobremesas/brooklyn-blackout-cookie-brownie-combo-pack-2-tins.d8805325baf6b23b4f01d119dc4531a7.jpg",
-            "name": "Brooklyn Blackout Company",
-            "dsc": "Brooklyn Blackout Cookie + Brownie Combo Pack - 2 Tins",
-            "price": 89
+            "img": "./img/cardapio/sobremesas/pavedemaracuja.jpg",
+            "name": "Pavê de Maracujá",
+            "dsc": "Delicioso pavê com base de biscoito de maisena, creme aveludado de maracujá e cobertura de ganache de chocolate.",
+            "price": 85
         },
         {
             "id": "best-seller-cupcake-dozen",
-            "img": "./img/cardapio/sobremesas/best-seller-cupcake-dozen.f93b21993f6a2da11c975d45b9b0d08f.jpg",
-            "name": "Crave Cupcakes",
-            "dsc": "Best Seller Cupcake Dozen",
-            "price": 89
-        },
+            "img": "./img/cardapio/sobremesas/banoffe.jpg",
+            "name": "Banoffe",
+            "dsc": "Deliciosa banoffe, com massa de biscoito amanteigada, doce de leite, banana caramelada e chantilly.",
+            "price": 85
+        },/*
         {
             "id": "choose-your-own-ice-cream-donuts-6-pack",
             "img": "./img/cardapio/sobremesas/choose-your-own-ice-cream-donuts-6-pack.24d0b44765a7c54237fcd7ea9d9d8093.jpg",
